@@ -16,13 +16,62 @@ html{
     font-family: 'PT Sans', sans-serif;
 }
 
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
 
 /* HEADER */
 Header{
     background-color: aqua;
     width: 100%;
-
-
+    max-width: 1200px;
     /* DEBUG */
     height: 60px;
 }
+
+.logo{
+    padding: 1rem;
+}
+
+.header-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin:0 auto;
+}
+
+.hamburger-menu{
+    color: white;
+    padding: 0 1rem;
+    font-size: 2em;
+}
+
+.menu{
+    display: none;
+}
+
+/* MEDIA-QUERING */
+
+/* TABLET-SCREEN  768PX*/
+@media screen and (min-width: 768px) {
+    .menu{
+        display: block;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+       } 
+    li{
+       color: wthite;
+        margin: 0 2em;
+    } 
+    .hamburger-menu{
+        display: none;
+    }
+
+    
+}
+
+/* LARGE-DESKTOP 1200PX */
