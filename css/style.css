@@ -88,6 +88,14 @@ margin:0 auto;
 background-color: var(--light-cyan);
 }
 
+.square-img{
+    /* DEBUG */
+    background-color: #8aec74;
+    min-width: 100px;
+    height: 100px;
+}
+
+
 /* STRATEGIC-PLANNING */
 .planning{
     background-color: var(--violet);
@@ -138,6 +146,27 @@ background-color: var(--light-cyan);
 }
 
 
+/* BANNER-SEC */
+#banner-sec{
+    background-color: var(--violet);
+}
+
+.banner{
+    width: 30%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+}
+
+.footer-container{
+    width: 30%;
+    color: white;
+    margin: 0 auto;
+}
+
 /* MEDIA-QUERING */
 
 /* TABLET-SCREEN  768PX*/
@@ -159,6 +188,11 @@ background-color: var(--light-cyan);
 width: calc(100% / 3 *2 - .5rem);
 }
 
+.internal{
+    display: flex;
+
+} 
+
 /* TESTIMONIALS-SECTION */
 .testimonial{
     display: flex;
@@ -174,7 +208,14 @@ width: calc(100% / 3 *2 - .5rem);
     width: calc(100% / 2 - var(--margin)*2);
 }
 
+/* ABOUT-US SECTION */
+.about-us{
+    display: flex;
+}
 
+.us-text-part{
+    width: 70%;
+}
 
 }
 
