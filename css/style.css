@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+/* PALETTES */
+:root{
+    --light-cyan: #b5ddff;
+    --violet:#9792e4;
+    --blu-sky: #0084fd;
+    --yellow: #ecb974;
+}
+
+
 /* COMMON */
 img{
     max-width: 100%;
@@ -24,7 +33,7 @@ html{
 
 /* HEADER */
 Header{
-    background-color: aqua;
+    background-color: var(--blu-sky);
     width: 100%;
     max-width: 1200px;
     /* DEBUG */
@@ -52,10 +61,70 @@ margin:0 auto;
     display: none;
 }
 
+/* MAIN */
+/* GET-DEMO SECTION */
+
+.container{
+    width: 100%;
+}
+
+.row{
+    padding: 1rem;
+}
+
+.col{
+    border-radius: 25px;
+    background-color: var(--light-cyan);
+    /* margin: 1rem; */
+    padding: 1em;
+    /* DEBUG */
+    border: 1px solid black;
+}
+
+/* STRATEGIC-PLANNING */
+.planning{
+    background-color: var(--violet);
+}
+
+.plan{
+    Margin: 2rem auto;
+    /* DEBUG */
+    min-height: 200PX;
+}
+
+/* DEBUG */
+.debug-img{
+    background-color: aquamarine;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+
 /* MEDIA-QUERING */
 
 /* TABLET-SCREEN  768PX*/
 @media screen and (min-width: 768px) {
+#get-demo .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1 rem;
+    justify-content: space-between;
+}
+.card{
+    width: calc(100% / 3 - 2rem / 2);
+       /* DEBUG */
+    min-height: 200px;
+}
+
+.cards :first-child{
+width: calc(100% / 3 *2 - .5rem);
+}    
+}
+
+/* LARGE-DESKTOP 1200PX */
+
+@media screen and (min-width: 1200px) 
+{
     .menu{
         display: block;
     }
@@ -71,7 +140,15 @@ margin:0 auto;
         display: none;
     }
 
-    
-}
+    #strategic-planning .planning{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;position: relative;
+    }
 
-/* LARGE-DESKTOP 1200PX */
+    .plan{
+        width: calc(100% / 2 - 2rem);
+        margin: 0;
+    }
+
+}
