@@ -1,0 +1,28 @@
+
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+img{
+    max-width: 100%;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+/* HEADER */
+Header{
+    background-color: aqua;
+    width: 100%;
+
+
+    /* DEBUG */
+    height: 60px;
+}
