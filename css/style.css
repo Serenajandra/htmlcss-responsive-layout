@@ -180,8 +180,15 @@ margin-top: 0.5em;
 
 
 /* TESTIMONIALS */
+
+
+
 .testimonial-presentation{
     background-color: white;
+    text-align: center;
+}
+.testimonial-presentation h3{
+    color: var(--violet);
 }
 
  .testimonial{
@@ -195,7 +202,13 @@ margin-top: 0.5em;
     object-fit: cover;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+p>span{
+    font-size: 2em;
 }
 
 /* BENEFITS */
@@ -204,10 +217,27 @@ margin-top: 0.5em;
     background-color: white;
 }
 
+.benefits-title h2{
+    color:white;
+}
+
+.benefit h2, h3{
+    color: var(--violet);
+    text-align: left;
+    font-size: 2em;
+}
+
 /* BANNER-SEC */
 #banner-sec{
     background-color: var(--violet);
 }
+
+/* ABOUT-US SECTION */
+
+#about .container{
+    background-color: white;
+}
+
 
 .banner{
     width: 30%;
@@ -323,21 +353,25 @@ width: calc(100% / 3 *2 - 1.5rem / 2);
         display: flex;  
     } 
 
-    
+
 
     /* STRATEGIC-PLANNING-SECTION */
 
     #strategic-planning .planning{
         display: flex;
-        flex-wrap: wrap;
         gap: 1rem;
         position: relative;
+        width: 70%;
     }
 
     .plan{
         width: calc(100% / 2 - 2rem);
         margin: 0;
     }
+
+    /* .plan-img{
+        width: 80%;
+    } */
 
 /* BENEFITS-SECTION */
 
