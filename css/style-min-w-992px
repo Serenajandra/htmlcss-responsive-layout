@@ -1,0 +1,53 @@
+/* MEDIA-QUERING DESKTOP 992PX */
+
+@media screen and (min-width: 992px) 
+{
+
+    /* HEADER */
+    .menu{
+        display: block;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+       } 
+    li{
+       color: wthite;
+        margin: 0 2em;
+    } 
+    .hamburger-menu{
+        display: none;
+    }
+
+    /* GET-DEMO-SECTION */
+    #get-demo .flex{
+        display: flex;  
+    } 
+
+
+
+    /* STRATEGIC-PLANNING-SECTION */
+
+    #strategic-planning .planning{
+        display: flex;
+        gap: 1rem;
+        position: relative;
+        width: 70%;
+    }
+
+    .plan{
+        width: calc(100% / 2 - 2rem);
+        margin: 0;
+    }
+
+    /* .plan-img{
+        width: 80%;
+    } */
+
+/* BENEFITS-SECTION */
+
+    .benefit{
+        width: calc(100% / 3 - var(--margin)*3);
+    }
+
+}

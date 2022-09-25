@@ -26,18 +26,13 @@ html{
     font-family: 'PT Sans', sans-serif;
 }
 
-body{
-    width:100%;
-}
-
-
 p{
     line-height: 2em;
     margin: 1em 0;
     
 }
 .row{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -45,7 +40,7 @@ p{
 .col{
     border-radius: 25px;
     margin: 2rem auto;
-    padding: 1em;
+    padding: 2rem;
 }
 
 .blue-button{
@@ -57,7 +52,9 @@ p{
     margin: 0.5rem auto;
     font-size: 1.5em;
     line-height: 1.5em;
-    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    letter-spacing: 5px;
 }
 
 
@@ -77,10 +74,10 @@ p{
 
 
 /* HEADER */
-Header{
+header{
     background-color: var(--blu-sky);
     width: 100%;
-    max-width: 1400px;
+    max-width: 1800px;
 }
 
 .logo{
@@ -89,8 +86,11 @@ Header{
 
 .header-container{
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
+
+    /* DEBUG */
+    border: 1px solid black;
 }
 
 .hamburger-menu{
@@ -112,40 +112,39 @@ background-color: var(--light-cyan);
 text-align: center;
 }
 
-.card-text{
-    line-height: 1.5em;
-    margin: 2rem auto;
-    min-width: 50%;
-}
 
-.card>h2{
-margin: 2em auto;
-}
-.card-text>p{
-    text-align: left;
-}
-
-.square-img>img {
- position: relative;
+.square-img{
+ margin-top: 1rem;
+ margin-bottom: 0;
  margin-left: 50%;
- margin-bottom: -0.2em;
  transform: translatex(-50%);
+ display: block;
 }
 
-.internal{
+.card-flex{ 
+    background-color: var(--light-cyan);
+    border-radius: 25px;
+    
+    margin: 2rem auto;
+    /* DEBUG */
+    border: 1px black solid;
+}
+.card-text{ 
+    padding: 1rem;
+    width: 100%;
+}
+
+/* .internal{
     padding-bottom:0;
-}
+} */
 
-i.fa-brands.fa-apple {
+/* i.fa-brands.fa-apple {
     width: auto;
-}
+} */
 
-.card>.fa-solid{
+/* .card>.fa-solid{
 margin-top: 0.5em;
-}
-
-
-
+} */ 
 
 /* STRATEGIC-PLANNING */
 .planning{
@@ -255,131 +254,8 @@ footer{
     margin: 0 auto;
 }
 
-/* MEDIA-QUERING */
-
-/* TABLET-SCREEN  768PX*/
-@media screen and (min-width: 768px) {
-
-/* GET-DEMO-SECTION */
-    #get-demo .cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5 rem;
-    justify-content: space-between;
-}
-.card{
-    width: calc(100% / 3 - 1.5rem / 3);
-}
-
-.cards :first-child{
-width: calc(100% / 3 *2 - 1.5rem / 2);
-}
-
-.cards>.flex{
-    margin:0;
-}
-.card-text{
-    margin-left: 1em;
-}
-
-.apple-btn{
-    margin-left: 1em;
-}
-
-.square-img>img {
-    position: relative;
-    margin-left: 4em;
-    margin-bottom: -1.3em;
-   }
-
-/* TESTIMONIALS-SECTION */
-.testimonial{
-    display: flex;
-}
-
-.radius-img{
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-.testimonial :last-child{
-    width: 70%;
-    
-}
-
-/* BENEFITS-SECTION */
-.benefits-sec{
-    display: flex;
-    flex-wrap: wrap;
-}
-.benefit{
-    width: calc(100% / 2 - var(--margin)*2);
-}
-
-/* ABOUT-US SECTION */
-.about-us{
-    display: flex;
-}
-
-.us-text-part{
-    width: 70%;
-}
-
-}
-
-/* DESKTOP 992PX */
-
-@media screen and (min-width: 992px) 
-{
-
-    /* HEADER */
-    .menu{
-        display: block;
-    }
-    ul{
-        display: flex;
-        list-style-type: none;
-       } 
-    li{
-       color: wthite;
-        margin: 0 2em;
-    } 
-    .hamburger-menu{
-        display: none;
-    }
-
-    /* GET-DEMO-SECTION */
-    #get-demo .flex{
-        display: flex;  
-    } 
 
 
-
-    /* STRATEGIC-PLANNING-SECTION */
-
-    #strategic-planning .planning{
-        display: flex;
-        gap: 1rem;
-        position: relative;
-        width: 70%;
-    }
-
-    .plan{
-        width: calc(100% / 2 - 2rem);
-        margin: 0;
-    }
-
-    /* .plan-img{
-        width: 80%;
-    } */
-
-/* BENEFITS-SECTION */
-
-    .benefit{
-        width: calc(100% / 3 - var(--margin)*3);
-    }
-
-}
 
 
 /* MEDIA QUERY LARGE DESKTOP 1200PX */

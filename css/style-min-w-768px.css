@@ -1,0 +1,73 @@
+
+/* MEDIA-QUERING TABLET-SCREEN  768PX*/
+@media screen and (min-width: 768px) {
+
+    /* GET-DEMO-SECTION */
+        #get-demo .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5 rem;
+        justify-content: space-between;
+    }
+    .card{
+        width: calc(100% / 3 - 1.5rem / 3);
+    }
+    
+    .cards :first-child{
+    width: calc(100% / 3 *2 - 1.5rem / 2);
+    }
+    
+        /* .card-text{
+        margin-left: 1em;
+    }
+    
+    .apple-btn{
+        margin-left: 1em;
+    }
+    
+    .square-img>img {
+        position: relative;
+        margin-left: 4em;
+        margin-bottom: -1.3em;
+       } */
+    
+    /* TESTIMONIALS-SECTION */
+    .testimonial{
+        display: flex;
+    }
+    
+    .radius-img{
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+    
+    .testimonial :last-child{
+        width: 70%;
+        
+    }
+
+    .card-flex{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    /* BENEFITS-SECTION */
+    .benefits-sec{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .benefit{
+        width: calc(100% / 2 - var(--margin)*2);
+    }
+    
+    /* ABOUT-US SECTION */
+    .about-us{
+        display: flex;
+    }
+    
+    .us-text-part{
+        width: 70%;
+    }
+    
+    }
+    
